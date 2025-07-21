@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Herbs and Seeds</title>
+    <!--Tailwind CSS CDN link-->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <!--Navbar-->
+    <nav class="bg-green-100 flex justify-between p-5 shadow-xl sticky top-0 z-10">
+        <h1 class="text-3xl font-bold">GREENDEN</h1>
+
+        <svg id="menuicon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+            class="size-6 w-9  md:hidden">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+        </svg>
+
+        <ul class="flex gap-5 text-gray-600 hidden md:flex">
+            <li>
+                <a class="hover:underline hover:text-black" href="home.html">Home</a>
+            </li>
+            <li>
+                <a class="hover:underline hover:text-black" href="products.html">Products</a>
+            </li>
+            <li>
+                <a class="hover:underline hover:text-black" href="contact.html">Contact</a>
+            </li>
+        </ul>
+    </nav>
+
+      <!--side navbar-->
+
+    <section id="sidenav" class="bg-green-100 fixed z-20 top-0 transition-all duration-1000" style="width: 50%; height:100vh;right: -50%">
+        <div id="closenav" class="text-right p-5 cursor-pointer">
+            <p class="inline">X</p>
+        </div>
+        <ul class="flex flex-col gap-10 items-center text-gray-600">
+            <li>
+                <a class="hover:underline hover:text-black" href="index.html">Home</a>
+            </li>
+            <li>
+                <a class="hover:underline hover:text-black" href="products.html">Products</a>
+            </li>
+            <li>
+                <a class="hover:underline hover:text-black" href="contact.html">Contact</a>
+            </li>
+        </ul>
+    </section>
+
+    <!--Search Bar-->
+    <section>
+        <h1 class="text-center font-bold text-3xl mt-10">Our Products</h1>
+        <div class="flex justify-center items-center">
+            <input id="search" class="border border-black p-2 mt-5 w-4/5" type="text" placeholder="Search for a Product...">
+        </div>
+    </section>
+
+    <!--Banner Image-->
+    <div class="mt-10">
+        <img src="./tw-images/banner-02.webp">
+    </div>
+
+    <!--Products-->
+    <section class="p-4 text-center">
+        <h1 class="font-bold text-3xl mt-5">Best Seller</h1>
+         <div class="grid grid-cols-2 md:grid-cols-3 mt-5 gap-5">
+            <div>
+                <img src="./tw-images/plant-01.jpg" class="inline hover:shadow-xl transform hover:-translate-y-2"
+                    alt="Rose Image">
+            </div>
+            <div>
+                <img src="./tw-images/plant-02.jpg" class="inline hover:shadow-xl transform hover:-translate-y-2"
+                    alt="Rose Image">
+            </div>
+             <div>
+                <img src="./tw-images/plant-03.jpg" class="inline hover:shadow-xl transform hover:-translate-y-2"
+                    alt="Rose Image">
+            </div>
+             <div>
+                <img src="./tw-images/plant-04.jpg" class="inline hover:shadow-xl transform hover:-translate-y-2"
+                    alt="Rose Image">
+            </div>
+             <div>
+                <img src="./tw-images/plant-05.jpg" class="inline hover:shadow-xl transform hover:-translate-y-2"
+                    alt="Rose Image">
+            </div>
+             <div>
+                <img src="./tw-images/plant-06.jpg" class="inline hover:shadow-xl transform hover:-translate-y-2"
+                    alt="Rose Image">
+            </div>
+         </div>
+     </section>
+
+     <!--banner-->
+     <div class="mt-5">
+        <img src="./tw-images/plant-07.webp">
+     </div>
+
+     <!--seeds-->
+      <div id="seed-container" class="grid grid-cols-2 md:grid-cols-4 mt-5 gap-5">
+            <div>
+                <img src="./tw-images/plant-08.webp" class="inline hover:shadow-xl transform hover:-translate-y-2"
+                    alt="Rose Image">
+                    <div class="bg-green-800 rounded-full mt-5 mb-5 text-white cursor-pointer hover:bg-black">
+                    <h1 class="text-center">Cherry Tomato</h1>
+                    <p class="text-center">$10</p>
+                    </div>
+            </div>
+             <div>
+                <img src="./tw-images/plant-09.webp" class="inline hover:shadow-xl transform hover:-translate-y-2"
+                    alt="Rose Image">
+                    <div class="bg-green-800 rounded-full mt-5 mb-5 text-white cursor-pointer hover:bg-black">
+                   <h1 class="text-center">Portulaca</h1>
+                    <p class="text-center">$10</p>
+                    </div>
+            </div>
+             <div>
+                <img src="./tw-images/seed-01.webp" class="inline hover:shadow-xl transform hover:-translate-y-2"
+                    alt="Rose Image">
+                    <div class="bg-green-800 rounded-full mt-5 mb-5 text-white cursor-pointer hover:bg-black">
+                    <h1 class="text-center">Red Capsicum</h1>
+                    <p class="text-center">$10</p>
+                    </div>
+            </div>
+            <div>
+                <img src="./tw-images/seed-02.webp" class="inline hover:shadow-xl transform hover:-translate-y-2"
+                    alt="Rose Image">
+                    <div class="bg-green-800 rounded-full mt-5 mb-5 text-white cursor-pointer hover:bg-black">
+                    <h1 class="text-center">Dahlia</h1>
+                    <p class="text-center">$10</p>
+                    </div>
+            </div>
+             <div>
+                <img src="./tw-images/seed-03.webp" class="inline hover:shadow-xl transform hover:-translate-y-2"
+                    alt="Rose Image">
+                    <div class="bg-green-800 rounded-full mt-5 mb-5 text-white cursor-pointer hover:bg-black">
+                    <h1 class="text-center">Thai basil</h1>
+                    <p class="text-center">$10</p>
+                    </div>
+            </div>
+             <div>
+                <img src="./tw-images/seed-04.webp" class="inline hover:shadow-xl transform hover:-translate-y-2"
+                    alt="Rose Image">
+                    <div class="bg-green-800 rounded-full mt-5 mb-5 text-white cursor-pointer hover:bg-black">
+                     <h1 class="text-center">Green Cucumber</h1>
+                    <p class="text-center">$10</p>
+                    </div>
+            </div>
+              <div>
+                <img src="./tw-images/seed-05.webp" class="inline hover:shadow-xl transform hover:-translate-y-2"
+                    alt="Rose Image">
+                    <div class="bg-green-800 rounded-full mt-5 mb-5 text-white cursor-pointer hover:bg-black">
+                     <h1 class="text-center">Zinniz Liliput</h1>
+                    <p class="text-center">$10</p>
+                    </div>
+            </div>
+              <div>
+                <img src="./tw-images/seed-06.webp" class="inline hover:shadow-xl transform hover:-translate-y-2"
+                    alt="Rose Image">
+                    <div class="bg-green-800 rounded-full mt-5 mb-5 text-white cursor-pointer hover:bg-black">
+                     <h1 class="text-center">Fenugreek</h1>
+                    <p class="text-center">$10</p>
+                    </div>
+
+            </div>
+        </div>
+
+          <!--Footer-->
+    <section class="bg-green-100 p-10 flex flex-col gap-5">
+        <h1 class="text-4xl font-bold">Greenden</h1>
+        <p>The Standard chunk of lorem ipsum used since the 1500s is reproduced below for those interest</p>
+        <p>@ 2021 Greenday.com</p>
+    </section>
+
+    <script src="herbs&seeds.js"></script>
+    </body>
+    </html>
+
+
+
+
+
+
+
+
+
+
+
+
+        
+        
+        
+        
+        
+        
+        

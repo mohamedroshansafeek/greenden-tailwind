@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products</title>
+    <!--Tailwind CSS CDN link-->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <!--Navbar-->
+    <nav class="bg-green-100 flex justify-between p-5 shadow-xl sticky top-0 z-10">
+        <h1 class="text-3xl font-bold">GREENDEN</h1>
+
+        <svg id="menuicon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+            class="size-6 w-9  md:hidden">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+        </svg>
+
+        <ul class="flex gap-5 text-gray-600 hidden md:flex">
+            <li>
+                <a class="hover:underline hover:text-black" href="home.html">Home</a>
+            </li>
+            <li>
+                <a class="hover:underline hover:text-black" href="products.html">Products</a>
+            </li>
+            <li>
+                <a class="hover:underline hover:text-black" href="contact.html">Contact</a>
+            </li>
+        </ul>
+    </nav>
+
+      <!--side navbar-->
+
+    <section id="sidenav" class="bg-green-100 fixed z-20 top-0 transition-all duration-1000" style="width: 50%; height:100vh;right: -50%">
+        <div id="closenav" class="text-right p-5 cursor-pointer">
+            <p class="inline">X</p>
+        </div>
+        <ul class="flex flex-col gap-10 items-center text-gray-600">
+            <li>
+                <a class="hover:underline hover:text-black" href="index.html">Home</a>
+            </li>
+            <li>
+                <a class="hover:underline hover:text-black" href="products.html">Products</a>
+            </li>
+            <li>
+                <a class="hover:underline hover:text-black" href="contact.html">Contact</a>
+            </li>
+        </ul>
+    </section>
+
+    <!--Search Bar-->
+    <section>
+        <h1 class="text-center font-bold text-3xl mt-10">Our Products</h1>
+        <div class="flex justify-center items-center">
+            <input id="search" class="border border-black p-2 mt-5 w-4/5" type="text" placeholder="Search for a Product...">
+        </div>
+    </section>
+
+    <!--banner-->
+    <div class="mt-5 mb-5 grid justify-center">
+        <img src="./tw-images/banner-4.jpg">
+    </div>
+
+    <!--Products-->
+    <section class="p-5 text-center">
+        <div id="product-container" class="grid grid-cols-2 md:grid-cols-4 mt-5 gap-5">
+            <div>
+                <img src="./tw-images/bestseller_3.jpg" class="inline hover:shadow-xl transform hover:-translate-y-2"
+                    alt="Rose Image">
+                <div class="bg-green-800 rounded-full mt-5 mb-5 text-white cursor-pointer hover:bg-black">
+                <h1>Lily Flower</h1>
+                <p>$25</p>
+                </div>
+            </div>
+            
+            <div>
+                <img src="./tw-images/bestseller_4.jpg" class="inline hover:shadow-xl transform hover:-translate-y-2"
+                    alt="Rose Image">
+                <div class="bg-green-800 rounded-full mt-5 mb-5 text-white cursor-pointer hover:bg-black">
+                <h1>Tulip Flower</h1>
+                <p>$30</p>
+                </div>
+            </div>
+            <div>
+                <img src="./tw-images/bestseller_5.jpg" class="inline hover:shadow-xl transform hover:-translate-y-2"
+                    alt="Rose Image">
+                <div class="bg-green-800 rounded-full mt-5 mb-5 text-white cursor-pointer hover:bg-black">
+                <h1>Marigold Flower</h1>
+                <p>$40</p>
+                </div>
+            </div>
+            <div>
+                <img src="./tw-images/bestseller_6.jpg" class="inline hover:shadow-xl transform hover:-translate-y-2"
+                    alt="Rose Image">
+                <div class="bg-green-800 rounded-full mt-5 mb-5 text-white cursor-pointer hover:bg-black">
+                <h1>Orchid Flower</h1>
+                <p>$20</p>
+                </div>
+            </div>
+            <div>
+                <img src="./tw-images/bestseller_7.jpg" class="inline hover:shadow-xl transform hover:-translate-y-2"
+                    alt="Rose Image">
+                <div class="bg-green-800 rounded-full mt-5 mb-5 text-white cursor-pointer hover:bg-black">
+                <h1>Jasmine</h1>
+                <p>$25</p>
+                </div>
+            </div>
+           
+            <div>
+                <img src="./tw-images/bestseller_11.jpg" class="inline hover:shadow-xl transform hover:-translate-y-2"
+                    alt="Rose Image">
+                <div class="bg-green-800 rounded-full mt-5 mb-5 text-white cursor-pointer hover:bg-black">
+                <h1>Sunflower</h1>
+                <p>$50</p>
+                </div>
+            </div>
+            <div>
+                <img src="./tw-images/bestseller_12.jpg" class="inline hover:shadow-xl transform hover:-translate-y-2"
+                    alt="Rose Image">
+                <div class="bg-green-800 rounded-full mt-5 mb-5 text-white cursor-pointer hover:bg-black">
+                <h1>Cactus Flower</h1>
+                <p>$30</p>
+                </div>
+            </div>
+             <div>
+                <img src="./tw-images/bestseller_10.jpg" class="inline hover:shadow-xl transform hover:-translate-y-2"
+                    alt="Rose Image">
+                <div class="bg-green-800 rounded-full mt-5 mb-5 text-white cursor-pointer hover:bg-black">
+                <h1>Daisy Flower</h1>
+                <p>$40</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Footer-->
+    <section class="bg-green-100 p-10 flex flex-col gap-5">
+        <h1 class="text-4xl font-bold">Greenden</h1>
+        <p>The Standard chunk of lorem ipsum used since the 1500s is reproduced below for those interest</p>
+        <p>@ 2021 Greenday.com</p>
+    </section>
+
+    <script src="product.js"></script>
+</body>
+
+</html
